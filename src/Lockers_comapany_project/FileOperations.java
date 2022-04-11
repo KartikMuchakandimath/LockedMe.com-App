@@ -46,10 +46,11 @@ public class FileOperations {
 			
 		}
 		else {
-			System.out.println("empty");
+			System.out.println("No files exists in your directory\n");
 		}
 		return FilesNames;
 	}
+	
 	public static void DisplayFiles(String path) {
 		FileOperations.CreatingDir("Lockers_files");
 		System.out.println("Displaying All the files in Ascending Order\n");
@@ -110,7 +111,7 @@ public class FileOperations {
 			System.out.println("Path of the file: "+pathofFile);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			System.out.println("Not present");
+			System.out.println(" File Not found");
 		}
 		 
 		 
